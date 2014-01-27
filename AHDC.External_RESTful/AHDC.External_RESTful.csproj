@@ -46,16 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\Animal.cs" />
-    <Compile Include="DTO\DictionaryTerm.cs" />
-    <Compile Include="DTO\LabOrder.cs" />
-    <Compile Include="DTO\Order.cs" />
-    <Compile Include="DTO\person.cs" />
-    <Compile Include="DTO\Specimen.cs" />
-    <Compile Include="DTO\Test.cs" />
+    <Compile Include="Order_DTO\Animal.cs" />
+    <Compile Include="Order_DTO\DictionaryTerm.cs" />
+    <Compile Include="Order_DTO\LabOrder.cs" />
+    <Compile Include="Order_DTO\Order.cs" />
+    <Compile Include="Order_DTO\person.cs" />
+    <Compile Include="Order_DTO\Specimen.cs" />
+    <Compile Include="Order_DTO\Test.cs" />
     <Compile Include="ExampleRest.cs" />
     <Compile Include="OrderCreation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response_DTO\Ack.cs" />
+    <Compile Include="Response_DTO\LabOrderResponse.cs" />
     <Compile Include="SendOrder.cs" />
   </ItemGroup>
   <ItemGroup>

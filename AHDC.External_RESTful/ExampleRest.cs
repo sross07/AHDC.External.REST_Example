@@ -21,11 +21,13 @@ namespace AHDC.External_RESTful
              * Libraries used within: nuget restsharp 104.3.3
              * */
 
-            // Create an order
+            // This Creates a basic Order
+            // This is done in classes than serialized to XML (or JSON...)
             var order = OrderCreation.MakeSimpleOrder();
 
-            // Send a rest Order
-            SendOrder.ToAHDC(order, "username", "password");
+            // This class uses RestSharp to send the order
+            // Replace "username" and "password" with your real username and passowrd
+            SendOrder.ToAHDC(order, "ahdc-tester@cornell.edu", "ahdc_test2010");
         }
     }
 }

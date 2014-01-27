@@ -22,10 +22,13 @@ namespace AHDC.External_RESTful
 
             //OrderDate is required.  
             order.orderDate = DateTime.Now;
+            order.herdIllnessDate = DateTime.Now;
+            order.animalOnsetSubmit = DateTime.Now;
 
             Animal animal = new Animal();
-            animal.animalId = "Test Animal";         
-
+            animal.animalId = "Test Animal";
+            animal.birthDate = DateTime.Now;
+      
             order.animals.Add(animal);
 
             labOrder.Orders.Add(order);
